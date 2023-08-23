@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-One paper "[Understanding Self-attention Mechanism via Dynamical System Perspective](https://arxiv.org/pdf/xxx.pdf)" accepted by ICCV'23
+One paper "[Understanding Self-attention Mechanism via Dynamical System Perspective](https://arxiv.org/pdf/2308.09939.pdf)" accepted by ICCV'23
 
