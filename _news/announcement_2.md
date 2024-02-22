@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2023-08-20
+date: 2024-01-23
 inline: true
 related_posts: false
 ---
 
-One paper "[Understanding Self-attention Mechanism via Dynamical System Perspective](https://arxiv.org/pdf/2308.09939.pdf)" accepted by ICCV'23
+One paper "[Mirror Gradient: Towards Robust Multimodal Recommender Systems via Exploring Flat Local Minima](https://arxiv.org/pdf/2402.11262.pdf)" accepted by WWW'24
 
