@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-One paper "[Mirror Gradient: Towards Robust Multimodal Recommender Systems via Exploring Flat Local Minima](https://arxiv.org/pdf/2402.11262.pdf)" accepted by WWW'24
+One paper "[Mirror Gradient](https://arxiv.org/pdf/2402.11262.pdf)" accepted by WWW'24
 
