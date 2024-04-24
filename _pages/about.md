@@ -16,6 +16,10 @@ social: true  # includes social icons at the bottom of the page
 <!-- https://fangggf.github.io/ -->
 
 <div style="text-align: justify;">
-<p> Hello there! My name is Shanshan Zhong, and I am a student from the School of Computer Science and Engineering at Sun Yat-sen University, advised by Professor Wushao Wen and Professor Liang Lin. <br> My research interests primarily revolve around the application and structure design of generative models (including large language models and diffusion models), attention mechanism, and multimodal technology (including multimodal recommendation and multimodal information fusion). 
+
+<p> Hello there! My name is Shanshan Zhong, and I am a student from the School of Computer Science and Engineering at Sun Yat-sen University, advised by Prof. Wushao Wen and Prof. Liang Lin. <br> My research interests primarily revolve around the application and structure design of generative models (including large language models and diffusion models), attention mechanism, and multimodal technology (including multimodal recommendation and multimodal information fusion). 
 </p>
+
+<p><strong style="color:red;">I am seeking a PhD position starting in Fall '25! Please feel free to drop me an email!</strong></p>
+
 </div>
