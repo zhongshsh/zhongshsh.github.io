@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-07-20
+date: 2022-10-06
 inline: true
 related_posts: false
 ---
 
-One paper "[SUR-adapter](https://arxiv.org/pdf/2305.05189.pdf)" accepted by ACM MM'23 (Oral)
+One paper "[CEM](https://aclanthology.org/2022.emnlp-main.213.pdf)" accepted by EMNLP'22
