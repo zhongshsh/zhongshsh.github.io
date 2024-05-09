@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2024-05-06
+date: 2024-02-27
 inline: true
 related_posts: false
 ---
 
-One paper "[AttNS](https://arxiv.org/pdf/2302.10184)" accepted by ICML'24
+One paper "[CLoT](https://arxiv.org/pdf/2312.02439.pdf)" accepted by CVPR'24
 
