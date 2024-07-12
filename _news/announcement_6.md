@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-One paper "[AttNS](https://arxiv.org/pdf/2302.10184)" accepted by ICML'24
+One paper "[AttNS](https://openreview.net/pdf?id=7RHFdkAkVY)" accepted by ICML'24
 
