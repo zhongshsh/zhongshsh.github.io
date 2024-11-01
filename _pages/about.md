@@ -17,9 +17,9 @@ social: true  # includes social icons at the bottom of the page
 
 <div style="text-align: justify;">
 
-<p> Hello there! I am a second-year master student from the School of Computer Science and Engineering at Sun Yat-sen University, advised by IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=Nav8m8gAAAAJ">Liang Lin</a> and Prof. Wushao Wen. My research interests primarily revolve around multimodality, including multimodal large lanugage models, diffusion models, and multimodal recommender systems. 
+<p> Hello there! I am a final-year master student from the School of Computer Science and Engineering at Sun Yat-sen University, advised by IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=Nav8m8gAAAAJ">Liang Lin</a> and Prof. Wushao Wen. My research interests revolve around multimodal understanding and generation, including 3D/2D generation, multimodal large lanugage models, and multimodal recommender systems. I am also open to trying new ideas as well! 🤩
 </p>
 
-<p><strong style="color:red;">I am seeking a PhD position starting in Fall '25! Please feel free to drop me an email!</strong></p>
+<p><strong style="color:red;">🙌 I am seeking a PhD position starting in Fall'25! Please feel free to drop me an email!</strong></p>
 
 </div>
