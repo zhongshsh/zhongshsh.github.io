@@ -6,7 +6,7 @@ title: Shanshan Zhong # the website title (if blank, full name will be used inst
 first_name: Shanshan
 middle_name: 
 last_name: Zhong (钟珊珊)
-email: zhongshsh5@mail2.sysu.edu.cn
+email: szhong2@andrew.cmu.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 # footer_text: >

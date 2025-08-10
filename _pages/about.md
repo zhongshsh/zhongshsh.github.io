@@ -17,7 +17,13 @@ social: true  # includes social icons at the bottom of the page
 
 <div style="text-align: justify;">
 
-<p> Hello there! I am a first-year PhD student at Language Technologies Institute, Carnegie Mellon University, where I was advised by Prof. <a href="https://scholar.google.com/citations?user=E9BaEBYAAAAJ">Chenyan Xiong</a>. Prior to this, I earned both my master's and bachelor's degrees from Sun Yat-sen University, where I was advised by IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=Nav8m8gAAAAJ">Liang Lin</a> and Prof. Wushao Wen. My research interests revolve around multimodal understanding and generation, including 3D/2D generation, multimodal large lanugage models, and multimodal recommender systems. I am also open to trying new ideas as well! 
+<p> Hello there! I am a CS Ph.D. student at Carnegie Mellon University starting 2025 Fall, advised by Prof. <a href="https://scholar.google.com/citations?user=E9BaEBYAAAAJ">Chenyan Xiong</a>. 
+
+Prior to this, I earned both my master's and bachelor's degrees from Sun Yat-sen University, where I was advised by IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=Nav8m8gAAAAJ">Liang Lin</a> and Prof. Wushao Wen. 
+
+Over the past years, I have also had the pleasure of collaborating with Prof. <a href="https://scholar.google.com/citations?user=FJ-huxgAAAAJ">Alan Yuille</a> and <a href="https://scholar.google.com/citations?user=yLYj88sAAAAJ">Jieneng Chen</a> at <a href="http://ccvl.jhu.edu">CCVL</a>, as well as Prof. <a href="https://scholar.google.com/citations?user=0b7ZqlcAAAAJ">Pan Zhou</a> and <a href="https://scholar.google.com/citations?user=zW32dXsAAAAJ">Shanghua Gao</a> at <a href="https://sail.sea.com/">Sea AI Lab</a>.
+
+<!-- My research interests revolve around multimodal understanding and generation, including 3D/2D generation, multimodal large lanugage models, and multimodal recommender systems. I am also open to trying new ideas as well!  -->
 </p>
 
 <!-- <p><strong style="color:red;"> I am seeking a PhD position starting in Fall'25! Please feel free to drop me an email!</strong> <img src="../assets/img/extreme-teamwork.gif" width="30"></p> -->
