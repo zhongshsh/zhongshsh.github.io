@@ -23,7 +23,7 @@ social: true  # includes social icons at the bottom of the page
 Prior to this, I earned both my master's and bachelor's degrees from Sun Yat-sen University, where I was advised by IEEE Fellow Prof. <a href="https://scholar.google.com/citations?user=Nav8m8gAAAAJ">Liang Lin</a> and Prof. Wushao Wen. 
 <br>
 
-Over the past years, I have also had the pleasure of collaborating with Prof. <a href="https://scholar.google.com/citations?user=FJ-huxgAAAAJ">Alan Yuille</a> and <a href="https://scholar.google.com/citations?user=yLYj88sAAAAJ">Jieneng Chen</a> at <a href="http://ccvl.jhu.edu">CCVL</a>, as well as Prof. <a href="https://scholar.google.com/citations?user=0b7ZqlcAAAAJ">Pan Zhou</a> and <a href="https://scholar.google.com/citations?user=zW32dXsAAAAJ">Shanghua Gao</a> at <a href="https://sail.sea.com/">Sea AI Lab</a>.
+Over the past years, I have also had the pleasure of collaborating with Prof. <a href="https://scholar.google.com/citations?user=FJ-huxgAAAAJ">Alan Yuille</a> and <a href="https://scholar.google.com/citations?user=yLYj88sAAAAJ">Jieneng Chen</a> at <a href="http://ccvl.jhu.edu">CCVL</a>, as well as Prof. <a href="https://scholar.google.com/citations?user=0b7ZqlcAAAAJ">Pan Zhou</a> and <a href="https://scholar.google.com/citations?user=zW32dXsAAAAJ">Shanghua Gao</a> at <a href="https://sail.sea.com/">Sea AI Lab</a>. I also had a great experience contributing to <a href="https://github.com/Oneflow-Inc/oneflow">OneFlow</a>.
 
 <!-- My research interests revolve around multimodal understanding and generation, including 3D/2D generation, multimodal large lanugage models, and multimodal recommender systems. I am also open to trying new ideas as well!  -->
 </p>
