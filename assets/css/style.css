@@ -215,7 +215,7 @@ img { max-width: 100%; height: auto; }
     border: 1px solid #eee;
     border-radius: 8px;
     transition: box-shadow 0.3s ease;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .pub-item:hover {
