@@ -6,38 +6,39 @@ Shanshan Zhong's academic homepage. Pure static HTML — no build tools, no Jeky
 
 ```
 index.html        → Home (bio, research interests, news, awards, upcoming events, get connected, academic service)
-projects.html     → Publications list with thumbnails, PDF/code links
-news.html         → Full news archive (table format)
+projects.html     → Publications list (rendered from data/publications.js)
+news.html         → Full news archive (rendered from data/news.js)
 data/news.js      → Shared news data (used by index.html and news.html)
 data/awards.js    → Shared awards data (used by index.html)
 data/events.js    → Shared events data (used by index.html)
+data/publications.js → Publications data (used by projects.html)
 assets/css/style.css → All styling
 assets/img/avatar.jpg → Profile photo
 assets/img/publication_preview/ → Paper thumbnail images
+robots.txt        → Search engine crawl rules
+.nojekyll         → Disable Jekyll on GitHub Pages
 ```
 
 ## How to Update
 
-### Add a New Publication (projects.html)
+### Add a New Publication
 
-Open `projects.html` and add a new `<div class="pub-item">` block inside `<div class="pub-container">`. Copy an existing entry and modify:
+Edit `data/publications.js` and add a new object to the `PUBLICATIONS_DATA` array:
 
-```html
-<div class="pub-item">
-    <img src="assets/img/publication_preview/YOUR_IMAGE.png" alt="Short Name" width="80px">
-    <div class="pub-info">
-        <p class="pub-title">Paper Title <a href="PAPER_URL" aria-label="Link to publication"><i class="fa-solid fa-paperclip"></i></a></p>
-        <p class="pub-authors">Author1, <em>Shanshan Zhong</em>, Author2</p>
-        <p class="pub-venue">Venue Year <span class="award">Award Name</span></p>
-        <p class="pub-links"><a href="PDF_URL"><i class="fa-solid fa-file-pdf"></i> pdf</a> <a href="CODE_URL"><i class="fa-brands fa-github"></i> code</a></p>
-    </div>
-</div>
+```js
+{
+    img: "assets/img/publication_preview/YOUR_IMAGE.png",
+    title: "Paper Title",
+    link: "https://arxiv.org/abs/XXXX.XXXXX",
+    authors: "Author1, <em>Shanshan Zhong</em>, Author2",
+    venue: "Venue Year",
+    award: "Award Name",  // optional, omit if none
+},
 ```
 
 - Place the thumbnail image in `assets/img/publication_preview/`
-- Use `<em>Shanshan Zhong</em>` to highlight your name (renders with underline)
-- Add `<span class="award">Award Name</span>` after the venue if applicable
-- The `pub-links` line is optional — include whichever links are available (pdf, code, project, etc.)
+- Use `<em>Shanshan Zhong</em>` to highlight your name
+- The `award` field is optional — include only if applicable
 
 ### Add a News Item
 
@@ -47,7 +48,7 @@ Edit `data/news.js` and add a new object at the **top** of the `NEWS_DATA` array
 { date: "Mon YYYY", text: 'Your news with <a href="URL">links</a>.' },
 ```
 
-Both the home page (recent 5) and full news page are rendered automatically from this single file.
+Both the home page (recent 3) and full news page are rendered automatically from this single file.
 
 ### Add an Award
 
