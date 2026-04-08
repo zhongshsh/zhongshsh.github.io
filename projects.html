@@ -25,7 +25,7 @@
                 <a href="https://twitter.com/zhongshsh33" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/shanshan-zhong-b99922365" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/zhongshsh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:szhong2@andrew.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:szhong2@cs.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
         <div class="school-info">
@@ -47,78 +47,30 @@
     <!-- Selected Publications -->
     <section class="section">
         <p style="font-size:0.95rem; color:#666; margin-bottom:20px;"><b>Here are some of my recent favorite publications (* denotes co-first author).</b></p>
-        <div class="pub-container">
-
-            <div class="pub-item">
-                <img src="assets/img/publication_preview/ling2026agent.png" alt="Agent Skills" width="80px">
-                <div class="pub-info">
-                    <p class="pub-title">Agent Skills: A Data-Driven Analysis of Claude Skills for Extending Large Language Model Functionality <a href="https://arxiv.org/abs/2602.08004" aria-label="Link to publication"><i class="fa-solid fa-paperclip"></i></a></p>
-                    <p class="pub-authors">George Ling, <em>Shanshan Zhong</em>, Richard Huang</p>
-                    <p class="pub-venue">Preprint</p>
-                </div>
-            </div>
-
-            <div class="pub-item">
-                <img src="assets/img/publication_preview/zhong2026autogeo.png" alt="AutoGEO" width="80px">
-                <div class="pub-info">
-                    <p class="pub-title">What Generative Search Engines Like and How to Optimize Web Content Cooperatively <a href="https://arxiv.org/pdf/2510.11438" aria-label="Link to publication"><i class="fa-solid fa-paperclip"></i></a></p>
-                    <p class="pub-authors">Yujiang Wu*, <em>Shanshan Zhong</em>*, Yubin Kim, Chenyan Xiong</p>
-                    <p class="pub-venue">ICLR 2026</p>
-                </div>
-            </div>
-            <div class="pub-item">
-                <img src="assets/img/publication_preview/huang2025minilongbench.png" alt="MiniLongBench" width="80px">
-                <div class="pub-info">
-                    <p class="pub-title">MiniLongBench: The Low-cost Long Context Understanding Benchmark for Large Language Models <a href="https://arxiv.org/pdf/2505.19959" aria-label="Link to publication"><i class="fa-solid fa-paperclip"></i></a></p>
-                    <p class="pub-authors">Zhongzhan Huang, Guoming Ling, <em>Shanshan Zhong</em>, Hefeng Wu, Liang Lin</p>
-                    <p class="pub-venue">ACL 2025 <span class="award">Outstanding Paper</span></p>
-                </div>
-            </div>
-
-            <div class="pub-item">
-                <img src="assets/img/publication_preview/huang2025routereval.png" alt="RouterEval" width="80px">
-                <div class="pub-info">
-                    <p class="pub-title">RouterEval: A Comprehensive Benchmark for Routing LLMs to Explore Model-Level Scaling Up in LLMs <a href="https://arxiv.org/pdf/2503.10657" aria-label="Link to publication"><i class="fa-solid fa-paperclip"></i></a></p>
-                    <p class="pub-authors">Zhongzhan Huang, Guoming Ling, Yupei Lin, Yandong Chen, <em>Shanshan Zhong</em>, Hefeng Wu, Liang Lin</p>
-                    <p class="pub-venue">EMNLP 2025 Findings</p>
-                </div>
-            </div>
-
-            <div class="pub-item">
-                <img src="assets/img/publication_preview/huang2025causality.png" alt="LoTbench" width="80px">
-                <div class="pub-info">
-                    <p class="pub-title">A Causality-Aware Paradigm for Evaluating Creativity of Multimodal Large Language Models <a href="https://arxiv.org/pdf/2501.15147" aria-label="Link to publication"><i class="fa-solid fa-paperclip"></i></a></p>
-                    <p class="pub-authors">Zhongzhan Huang*, <em>Shanshan Zhong</em>*, Pan Zhou, Shanghua Gao, Marinka Zitnik, Liang Lin</p>
-                    <p class="pub-venue">IEEE TPAMI 2025</p>
-                </div>
-            </div>
-
-
-            <div class="pub-item">
-                <img src="assets/img/publication_preview/zhong2023let.png" alt="CLoT" width="80px">
-                <div class="pub-info">
-                    <p class="pub-title">Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation <a href="https://arxiv.org/pdf/2312.02439" aria-label="Link to publication"><i class="fa-solid fa-paperclip"></i></a></p>
-                    <p class="pub-authors"><em>Shanshan Zhong</em>, Zhongzhan Huang, Shanghua Gao, Wushao Wen, Liang Lin, Marinka Zitnik, Pan Zhou</p>
-                    <p class="pub-venue">CVPR 2024</p>
-                </div>
-            </div>
-
-            <div class="pub-item">
-                <img src="assets/img/publication_preview/huang2025flat.png" alt="Flat Local Minima" width="80px">
-                <div class="pub-info">
-                    <p class="pub-title">Flat Local Minima for Continual Learning on Semantic Segmentation <a href="https://link.springer.com/chapter/10.1007/978-981-96-2054-8_29" aria-label="Link to publication"><i class="fa-solid fa-paperclip"></i></a></p>
-                    <p class="pub-authors">Zhongzhan Huang, Mingfu Liang, Senwei Liang, <em>Shanshan Zhong</em></p>
-                    <p class="pub-venue">MMM 2025 <span class="award">Best Paper Candidate</span></p>
-                </div>
-            </div>
-
-        </div>
+        <div class="pub-container" id="pub-container"></div>
     </section>
 
     <!-- Footer -->
     <footer>
         &copy; 2026 Shanshan Zhong
     </footer>
+
+<script src="data/publications.js"></script>
+<script>
+const pubContainer = document.getElementById('pub-container');
+PUBLICATIONS_DATA.forEach(item => {
+    const award = item.award ? ` <span class="award">${item.award}</span>` : '';
+    pubContainer.innerHTML += `
+        <div class="pub-item">
+            <img src="${item.img}" alt="${item.title}" width="80px">
+            <div class="pub-info">
+                <p class="pub-title">${item.title} <a href="${item.link}" aria-label="Link to publication"><i class="fa-solid fa-paperclip"></i></a></p>
+                <p class="pub-authors">${item.authors}</p>
+                <p class="pub-venue">${item.venue}${award}</p>
+            </div>
+        </div>`;
+});
+</script>
 
 </body>
 </html>

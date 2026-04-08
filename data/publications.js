@@ -1,0 +1,53 @@
+const PUBLICATIONS_DATA = [
+    {
+        img: "assets/img/publication_preview/ling2026agent.png",
+        title: "Agent Skills: A Data-Driven Analysis of Claude Skills for Extending Large Language Model Functionality",
+        link: "https://arxiv.org/abs/2602.08004",
+        authors: "George Ling, <em>Shanshan Zhong</em>, Richard Huang",
+        venue: "Preprint",
+    },
+    {
+        img: "assets/img/publication_preview/zhong2026autogeo.png",
+        title: "What Generative Search Engines Like and How to Optimize Web Content Cooperatively",
+        link: "https://arxiv.org/pdf/2510.11438",
+        authors: "Yujiang Wu*, <em>Shanshan Zhong</em>*, Yubin Kim, Chenyan Xiong",
+        venue: "ICLR 2026",
+    },
+    {
+        img: "assets/img/publication_preview/huang2025minilongbench.png",
+        title: "MiniLongBench: The Low-cost Long Context Understanding Benchmark for Large Language Models",
+        link: "https://arxiv.org/pdf/2505.19959",
+        authors: "Zhongzhan Huang, Guoming Ling, <em>Shanshan Zhong</em>, Hefeng Wu, Liang Lin",
+        venue: "ACL 2025",
+        award: "Outstanding Paper",
+    },
+    {
+        img: "assets/img/publication_preview/huang2025routereval.png",
+        title: "RouterEval: A Comprehensive Benchmark for Routing LLMs to Explore Model-Level Scaling Up in LLMs",
+        link: "https://arxiv.org/pdf/2503.10657",
+        authors: "Zhongzhan Huang, Guoming Ling, Yupei Lin, Yandong Chen, <em>Shanshan Zhong</em>, Hefeng Wu, Liang Lin",
+        venue: "EMNLP 2025 Findings",
+    },
+    {
+        img: "assets/img/publication_preview/huang2025causality.png",
+        title: "A Causality-Aware Paradigm for Evaluating Creativity of Multimodal Large Language Models",
+        link: "https://arxiv.org/pdf/2501.15147",
+        authors: "Zhongzhan Huang*, <em>Shanshan Zhong</em>*, Pan Zhou, Shanghua Gao, Marinka Zitnik, Liang Lin",
+        venue: "IEEE TPAMI 2025",
+    },
+    {
+        img: "assets/img/publication_preview/zhong2023let.png",
+        title: "Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation",
+        link: "https://arxiv.org/pdf/2312.02439",
+        authors: "<em>Shanshan Zhong</em>, Zhongzhan Huang, Shanghua Gao, Wushao Wen, Liang Lin, Marinka Zitnik, Pan Zhou",
+        venue: "CVPR 2024",
+    },
+    {
+        img: "assets/img/publication_preview/huang2025flat.png",
+        title: "Flat Local Minima for Continual Learning on Semantic Segmentation",
+        link: "https://link.springer.com/chapter/10.1007/978-981-96-2054-8_29",
+        authors: "Zhongzhan Huang, Mingfu Liang, Senwei Liang, <em>Shanshan Zhong</em>",
+        venue: "MMM 2025",
+        award: "Best Paper Candidate",
+    },
+];
