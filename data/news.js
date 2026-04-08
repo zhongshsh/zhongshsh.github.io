@@ -1,0 +1,17 @@
+const NEWS_DATA = [
+    { date: "Apr 2026", text: 'Excited to share that <a href="https://arxiv.org/pdf/2601.11340">Neural Chain-of-Thought Search</a> is accepted by ACL 2026 🎉' },
+    { date: "Feb 2026", text: 'Our paper <a href="https://arxiv.org/abs/2602.08004">Agent Skills</a> presents a data-driven analysis of Claude skills. <a href="https://www.youtube.com/watch?v=nbzJh3RdW0w">Youtube</a>, <a href="https://open.spotify.com/episode/5UuRACDSJSLngPOihghLRZ?si=ZKsrG1OZQl2EGLhxkYTQ6g">Podcast</a>' },
+    { date: "Jan 2026", text: 'Our paper <a href="https://zhongshsh.github.io/AutoGEO/">AutoGEO</a> has been accepted by ICLR 2026! My first paper during my PhD!' },
+    { date: "Nov 2025", text: 'Our paper <a href="https://arxiv.org/pdf/2507.10437">4D-Animal</a> has been accepted by WACV 2026! 🐾✨' },
+    { date: "Aug 2025", text: 'Two papers (<a href="https://arxiv.org/pdf/2503.10657">RouterEval</a> and <a href="https://arxiv.org/pdf/2509.14171">AssoCiAm</a>) are accepted by EMNLP 2025!' },
+    { date: "Aug 2025", text: 'I just began my PhD at CMU and am excited for the journey ahead!' },
+    { date: "Jul 2025", text: '<a href="https://arxiv.org/pdf/2505.19959">MiniLongbench</a> won the Outstanding Paper Award at ACL 2025!' },
+    { date: "Feb 2025", text: '<a href="https://arxiv.org/pdf/2501.15147">LoTbench</a> accepted by IEEE TPAMI and <a href="https://openreview.net/pdf?id=k4e3Dh2icw">DVIB</a> accepted by WWW\'25!' },
+    { date: "Jul 2024", text: 'One paper "<a href="https://arxiv.org/pdf/2304.06345">ASR</a>" accepted by ECCV\'24' },
+    { date: "May 2024", text: 'One paper "<a href="https://openreview.net/pdf?id=7RHFdkAkVY">AttNS</a>" accepted by ICML\'24' },
+    { date: "Feb 2024", text: 'One paper "<a href="https://arxiv.org/pdf/2312.02439.pdf">CLoT</a>" accepted by CVPR\'24' },
+    { date: "Jan 2024", text: 'One paper "<a href="https://arxiv.org/pdf/2402.11262.pdf">Mirror Gradient</a>" accepted by WWW\'24' },
+    { date: "Aug 2023", text: 'One paper "<a href="https://arxiv.org/pdf/2308.09939.pdf">StepNet</a>" accepted by ICCV\'23' },
+    { date: "Jul 2023", text: 'One paper "<a href="https://arxiv.org/pdf/2305.05189.pdf">SUR-adapter</a>" accepted by ACM MM\'23 (Oral)' },
+    { date: "Oct 2022", text: 'One paper "<a href="https://aclanthology.org/2022.emnlp-main.213.pdf">CEM</a>" accepted by EMNLP\'22' },
+];

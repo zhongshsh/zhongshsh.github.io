@@ -1,0 +1,363 @@
+/* ============================================================
+   Shanshan Zhong �?Academic Homepage
+   Layout inspired by zorazrw.github.io
+   ============================================================ */
+
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #333;
+    line-height: 1.6;
+    font-size: 15.5px;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+img { max-width: 100%; height: auto; }
+
+/* ============================================================
+   Intro Section
+   ============================================================ */
+.intro-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.profile-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.intro-text .cn-name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666;
+    margin-top: 2px;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #555;
+    font-size: 1.6rem;
+    transition: color 0.2s;
+}
+
+.social-icons a .ai-google-scholar {
+    font-size: 1.9rem;
+}
+.social-icons a:hover {
+    color: #C44E52;
+    text-decoration: none;
+}
+
+.school-info {
+    text-align: right;
+}
+
+.school-info h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.school-info p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* ============================================================
+   Navigation Banner
+   ============================================================ */
+.banner {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    margin: 10px 0 30px;
+}
+
+.navbar {
+    display: flex;
+    gap: 0;
+}
+
+.navbar .nav-link {
+    flex: 1;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 2px 0;
+    margin-right: 0;
+    transition: color 0.2s;
+}
+
+.navbar .nav-link:hover {
+    color: #C44E52;
+    text-decoration: none;
+}
+
+/* ============================================================
+   Sections
+   ============================================================ */
+.section {
+    margin-bottom: 35px;
+}
+
+.section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
+}
+
+.section p {
+    margin: 8px 0;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Details / collapsible */
+.section details {
+    margin: 8px 0;
+}
+
+.section details summary {
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #333;
+    padding: 4px 0;
+}
+
+.section details summary:hover {
+    color: #C44E52;
+}
+
+.section details ol {
+    margin: 6px 0 6px 20px;
+    padding: 0;
+}
+
+.section details ol li {
+    margin-bottom: 4px;
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+/* ============================================================
+   News
+   ============================================================ */
+#news ul, .section > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#news ul li, .section > ul > li {
+    padding: 6px 0;
+    font-size: 0.93rem;
+    line-height: 1.55;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.section > details > li {
+    padding: 6px 0;
+    font-size: 0.93rem;
+    line-height: 1.55;
+    border-bottom: 1px solid #f5f5f5;
+    list-style: none;
+}
+
+/* ============================================================
+   Publication Cards
+   ============================================================ */
+.pub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pub-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    align-items: flex-start;
+}
+
+.pub-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pub-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.pub-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.pub-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0 0 5px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.pub-title a {
+    color: #888;
+    margin-left: 5px;
+    font-size: 0.85rem;
+}
+.pub-title a:hover {
+    color: #C44E52;
+    text-decoration: none;
+}
+
+.pub-authors {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 0 4px;
+    line-height: 1.45;
+}
+
+.pub-authors em {
+    font-style: normal;
+    text-decoration: underline;
+    text-decoration-color: #C44E52;
+    text-underline-offset: 2px;
+}
+
+.pub-venue {
+    color: #C44E52;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.pub-links {
+    margin: 6px 0 0;
+}
+
+.pub-links a {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 2px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #555;
+    margin-right: 6px;
+    transition: all 0.2s;
+}
+
+.pub-links a:hover {
+    background: #C44E52;
+    color: #fff;
+    border-color: #C44E52;
+    text-decoration: none;
+}
+
+.award {
+    background: #C44E52;
+    color: #fff;
+    font-size: 0.72rem;
+    font-style: normal;
+    padding: 1px 8px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 600;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #999;
+    font-size: 0.85rem;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+}
+
+/* ============================================================
+   News Page
+   ============================================================ */
+.page-header { margin-bottom: 0.5rem; }
+.page-header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.2rem; }
+.page-header .page-desc { font-size: 0.9rem; color: #666; }
+
+.news-table { width: 100%; border-collapse: collapse; }
+.news-table td, .news-table th { padding: 5px 0; vertical-align: top; border: none; }
+.news-table th {
+    white-space: nowrap; font-weight: 600; color: #C44E52;
+    padding-right: 1.5rem; font-size: 0.9rem; width: 100px;
+    text-align: right;
+}
+.news-table td { font-size: 0.95rem; line-height: 1.5; text-align: left; }
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .school-info {
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .pub-item {
+        flex-direction: column;
+    }
+    .pub-item img {
+        width: 120px;
+    }
+    .navbar .nav-link {
+        margin-right: 30px;
+    }
+}
