@@ -1,6 +1,6 @@
 const NEWS_DATA = [
     { date: "Apr 2026", text: 'Excited to share that <a href="https://arxiv.org/pdf/2601.11340">Neural Chain-of-Thought Search (NCoTS) </a> is accepted by ACL 2026 🎉, a framework that reformulates reasoning as a dynamic search for the optimal thinking strategy. NCoTS boosts accuracy by over 3.5% while reducing generation length by over 22%. ' },
-    { date: "Feb 2026", text: 'Our paper <a href="https://arxiv.org/abs/2602.08004">Agent Skills</a> presents a data-driven analysis of Claude skills. Check it out for some interesting findings!<a href="https://www.youtube.com/watch?v=nbzJh3RdW0w">Youtube</a>, <a href="https://open.spotify.com/episode/5UuRACDSJSLngPOihghLRZ?si=ZKsrG1OZQl2EGLhxkYTQ6g">Podcast</a>' },
+    { date: "Feb 2026", text: 'Our paper <a href="https://arxiv.org/abs/2602.08004">Agent Skills</a> presents a data-driven analysis of Claude skills. Check it out for some interesting findings! ' },
     { date: "Jan 2026", text: 'Our paper <a href="https://zhongshsh.github.io/AutoGEO/">AutoGEO</a> has been accepted by ICLR 2026! My first paper during my PhD! Excited for what\'s next!' },
     { date: "Nov 2025", text: 'Our paper <a href="https://arxiv.org/pdf/2507.10437">4D-Animal</a> has been accepted by WACV 2026! Super proud of this work done at <a href="http://ccvl.jhu.edu">CCVL</a>. 🐾✨' },
     { date: "Aug 2025", text: 'Two papers (<a href="https://arxiv.org/pdf/2503.10657">RouterEval</a> and <a href="https://arxiv.org/pdf/2509.14171">AssoCiAm</a>) are accepted by EMNLP 2025!' },
