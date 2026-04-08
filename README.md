@@ -5,12 +5,11 @@ Shanshan Zhong's academic homepage. Pure static HTML — no build tools, no Jeky
 ## Site Structure
 
 ```
-index.html        → Home (bio, research interests, news, upcoming events, get connected, academic service)
+index.html        → Home (bio, research interests, news, awards, upcoming events, get connected, academic service)
 projects.html     → Publications list with thumbnails, PDF/code links
 news.html         → Full news archive (table format)
-awards.html       → Awards & honors
 data/news.js      → Shared news data (used by index.html and news.html)
-data/awards.js    → Shared awards data (used by awards.html)
+data/awards.js    → Shared awards data (used by index.html)
 data/events.js    → Shared events data (used by index.html)
 assets/css/style.css → All styling
 assets/img/avatar.jpg → Profile photo
@@ -58,7 +57,7 @@ Edit `data/awards.js` and add a new object to the `AWARDS_DATA` array:
 { year: "YYYY", text: 'Award Name, Venue (<a href="PAPER_URL">Paper Name</a>)' },
 ```
 
-The awards page is rendered automatically from this file.
+The awards section on the home page is rendered automatically from this file.
 
 ### Add an Upcoming Event
 
@@ -79,7 +78,6 @@ If you add a new page, update the `<nav class="navbar">` in **all** HTML files:
     <a href="index.html" class="nav-link">Home</a>
     <a href="projects.html" class="nav-link">Projects</a>
     <a href="news.html" class="nav-link">News</a>
-    <a href="awards.html" class="nav-link">Awards</a>
 </nav>
 ```
 
