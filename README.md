@@ -84,7 +84,7 @@ If you add a new page, update the `<nav class="navbar">` in **all** HTML files:
 
 ### Style Notes
 
-- Accent color: `#C44E52` (used for hover, venue text, time column, awards badge)
+- Accent color: `#8b0000` (used for hover, venue text, time column, awards badge)
 - Font: Poppins (Google Fonts)
 - Base font size: 15.5px
 - Max width: 900px centered
