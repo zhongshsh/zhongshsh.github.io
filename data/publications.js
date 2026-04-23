@@ -1,5 +1,19 @@
 const PUBLICATIONS_DATA = [
     {
+        img: "assets/img/publication_preview/zhong2026skilllearnbench.png",
+        title: "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
+        link: "https://arxiv.org/abs/2604.20087",
+        authors: "<em>Shanshan Zhong</em>, Yi Lu, Jingjie Ning, Yibing Wan, Lihan Feng, Yuyi Ao, Leonardo F. R. Ribeiro, Markus Dreyer, Sean Ammirati, Chenyan Xiong",
+        venue: "Preprint",
+    },
+    {
+        img: "assets/img/publication_preview/zhong2026agentwebbench.png",
+        title: "AgentWebBench: Benchmarking Multi-Agent Coordination in Agentic Web",
+        link: "https://arxiv.org/abs/2604.10938",
+        authors: "<em>Shanshan Zhong</em>, Kate Shen, Chenyan Xiong",
+        venue: "Preprint",
+    },
+    {
         img: "assets/img/publication_preview/ling2026agent.png",
         title: "Agent Skills: A Data-Driven Analysis of Claude Skills for Extending Large Language Model Functionality",
         link: "https://arxiv.org/abs/2602.08004",
