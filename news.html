@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
     <title>News — Shanshan Zhong</title>
+    <meta name="description" content="News and updates from Shanshan Zhong (钟珊珊), CS Ph.D. student at Carnegie Mellon University (LTI).">
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shanshan Zhong">
+    <meta property="og:title" content="News — Shanshan Zhong">
+    <meta property="og:description" content="News and updates from Shanshan Zhong (钟珊珊), CS Ph.D. student at CMU LTI.">
+    <meta property="og:url" content="https://zhongshsh.github.io/news.html">
+    <meta property="og:image" content="https://zhongshsh.github.io/assets/img/avatar.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="News — Shanshan Zhong">
+    <meta name="twitter:description" content="News and updates from Shanshan Zhong (钟珊珊), CS Ph.D. student at CMU LTI.">
+    <meta name="twitter:image" content="https://zhongshsh.github.io/assets/img/avatar.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -39,7 +52,6 @@
     <header class="banner">
         <nav class="navbar">
             <a href="index.html" class="nav-link">Home</a>
-            <a href="projects.html" class="nav-link">Projects</a>
             <a href="news.html" class="nav-link">News</a>
             <a href="events.html" class="nav-link">Events</a>
         </nav>
@@ -47,12 +59,13 @@
 
     <!-- All News -->
     <section class="section">
+        <h2>News</h2>
         <table class="news-table" id="news-all"></table>
     </section>
 
     <!-- Footer -->
     <footer>
-        &copy; 2026 Shanshan Zhong
+        &copy; 2026 Shanshan Zhong<span class="last-updated"></span>
     </footer>
 
 <script src="data/news.js"></script>
@@ -62,6 +75,7 @@ NEWS_DATA.forEach(item => {
     table.innerHTML += `<tr><th>${item.date}</th><td>${item.text}</td></tr>`;
 });
 </script>
+<script src="data/theme.js"></script>
 
 </body>
 </html>

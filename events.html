@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
     <title>Events — Shanshan Zhong</title>
+    <meta name="description" content="Talks, conferences, and events — upcoming and past — of Shanshan Zhong (钟珊珊), CS Ph.D. student at Carnegie Mellon University (LTI).">
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shanshan Zhong">
+    <meta property="og:title" content="Events — Shanshan Zhong">
+    <meta property="og:description" content="Talks, conferences, and events — upcoming and past — of Shanshan Zhong (钟珊珊).">
+    <meta property="og:url" content="https://zhongshsh.github.io/events.html">
+    <meta property="og:image" content="https://zhongshsh.github.io/assets/img/avatar.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Events — Shanshan Zhong">
+    <meta name="twitter:description" content="Talks, conferences, and events — upcoming and past — of Shanshan Zhong (钟珊珊).">
+    <meta name="twitter:image" content="https://zhongshsh.github.io/assets/img/avatar.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -39,7 +52,6 @@
     <header class="banner">
         <nav class="navbar">
             <a href="index.html" class="nav-link">Home</a>
-            <a href="projects.html" class="nav-link">Projects</a>
             <a href="news.html" class="nav-link">News</a>
             <a href="events.html" class="nav-link">Events</a>
         </nav>
@@ -63,7 +75,7 @@
 
     <!-- Footer -->
     <footer>
-        &copy; 2026 Shanshan Zhong
+        &copy; 2026 Shanshan Zhong<span class="last-updated"></span>
     </footer>
 
 <script src="data/events.js"></script>
@@ -71,7 +83,7 @@
 // ---- Upcoming ----
 const upcoming = document.getElementById('events-upcoming');
 if (EVENTS_DATA.length === 0) {
-    upcoming.innerHTML = `<tr><td style="color:#999;">No upcoming events right now — check back soon!</td></tr>`;
+    upcoming.innerHTML = `<tr><td style="color:var(--text-dim);">No upcoming events right now. Check back soon!</td></tr>`;
 } else {
     EVENTS_DATA.forEach(item => {
         upcoming.innerHTML += `<tr><th>${item.date}</th><td>${item.text}</td></tr>`;
@@ -115,9 +127,10 @@ if (PAST_EVENTS_DATA.length <= PAST_RECENT_COUNT) {
     document.getElementById('events-past-older-wrap').style.display = 'none';
 }
 if (PAST_EVENTS_DATA.length === 0) {
-    pastRecent.innerHTML = `<tr><td style="color:#999;">Coming soon.</td></tr>`;
+    pastRecent.innerHTML = `<tr><td style="color:var(--text-dim);">Coming soon.</td></tr>`;
 }
 </script>
+<script src="data/theme.js"></script>
 
 </body>
 </html>

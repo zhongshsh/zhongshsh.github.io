@@ -1,7 +1,41 @@
 /* ============================================================
-   Shanshan Zhong �?Academic Homepage
+   Shanshan Zhong Academic Homepage
    Layout inspired by zorazrw.github.io
    ============================================================ */
+
+/* ---------- Theme tokens ---------- */
+:root {
+    --bg:            #ffffff;
+    --text:          #333333;
+    --text-soft:     #555555;
+    --text-muted:    #666666;
+    --text-dim:      #999999;
+    --accent:        #8b0000;  /* links, headings, borders */
+    --accent-hover:  #C44E52;  /* badge hover / poster tag */
+    --accent-solid:  #8b0000;  /* solid badge bg w/ white text */
+    --border:        #eeeeee;
+    --border-soft:   #dddddd;
+    --tag-soft-bg:   #f2f2f2;
+    --card-shadow:   rgba(0, 0, 0, 0.10);
+    --banner-bg:     #faf1f1;
+}
+
+:root[data-theme="dark"] {
+    --bg:            #16181c;
+    --text:          #e6e6e6;
+    --text-soft:     #c2c2c2;
+    --text-muted:    #9aa0a6;
+    --text-dim:      #7a7f85;
+    --accent:        #f28b82;  /* light red — readable on dark */
+    --accent-hover:  #d9534f;
+    --accent-solid:  #b3261e;
+    --border:        #2a2d31;
+    --border-soft:   #3a3d42;
+    --tag-soft-bg:   #26282c;
+    --card-shadow:   rgba(0, 0, 0, 0.55);
+    --banner-bg:     rgba(242, 139, 130, 0.10);
+    color-scheme: dark;
+}
 
 /* ---------- Reset & Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -11,13 +45,15 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
-    color: #333;
+    color: var(--text);
+    background: var(--bg);
     line-height: 1.6;
     font-size: 15.5px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 a {
-    color: #8b0000;
+    color: var(--accent);
     text-decoration: none;
 }
 a:hover {
@@ -25,6 +61,31 @@ a:hover {
 }
 
 img { max-width: 100%; height: auto; }
+
+/* ---------- Theme toggle ---------- */
+#theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border-soft);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1.05rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+#theme-toggle:hover {
+    border-color: var(--accent);
+    transform: scale(1.08);
+}
 
 /* ============================================================
    Intro Section
@@ -56,18 +117,19 @@ img { max-width: 100%; height: auto; }
 .intro-text .cn-name {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #666;
+    color: var(--text-muted);
     margin-top: 2px;
 }
 
 .social-icons {
     margin-top: 10px;
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
 .social-icons a {
-    color: #555;
+    color: var(--text-soft);
     font-size: 1.6rem;
     transition: color 0.2s;
 }
@@ -76,7 +138,7 @@ img { max-width: 100%; height: auto; }
     font-size: 1.9rem;
 }
 .social-icons a:hover {
-    color: #8b0000;
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -88,12 +150,12 @@ img { max-width: 100%; height: auto; }
     margin: 0;
     font-size: 1.8rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text);
 }
 
 .school-info p {
     margin: 5px 0 0;
-    color: #666;
+    color: var(--text-muted);
     font-size: 1.2rem;
 }
 
@@ -101,8 +163,8 @@ img { max-width: 100%; height: auto; }
    Navigation Banner
    ============================================================ */
 .banner {
-    border-top: 1px solid #8b0000;
-    border-bottom: 1px solid #8b0000;
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
     padding: 4px 0;
     margin: 10px 0 30px;
 }
@@ -115,7 +177,7 @@ img { max-width: 100%; height: auto; }
 .navbar .nav-link {
     flex: 1;
     text-align: center;
-    color: #333;
+    color: var(--text);
     font-weight: 500;
     font-size: 1.1em;
     padding: 2px 0;
@@ -124,9 +186,21 @@ img { max-width: 100%; height: auto; }
 }
 
 .navbar .nav-link:hover {
-    color: #8b0000;
+    color: var(--accent);
     text-decoration: none;
 }
+
+/* Upcoming-event banner */
+.event-banner {
+    margin: 16px 0 0;
+    padding: 10px 16px;
+    background: var(--banner-bg);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text);
+}
+.event-banner a { font-weight: 500; }
 
 /* ============================================================
    Sections
@@ -139,7 +213,7 @@ img { max-width: 100%; height: auto; }
     font-size: 1.4rem;
     margin-bottom: 15px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #8b0000;
+    border-bottom: 2px solid var(--accent);
 }
 
 .section p {
@@ -156,12 +230,12 @@ img { max-width: 100%; height: auto; }
 .section details summary {
     cursor: pointer;
     font-size: 0.95rem;
-    color: #333;
+    color: var(--text);
     padding: 4px 0;
 }
 
 .section details summary:hover {
-    color: #8b0000;
+    color: var(--accent);
 }
 
 .section details ol {
@@ -188,15 +262,55 @@ img { max-width: 100%; height: auto; }
     padding: 6px 0;
     font-size: 0.93rem;
     line-height: 1.55;
-    border-bottom: 1px solid #8b0000;
+    border-bottom: 1px solid var(--accent);
 }
 
 .section > details > li {
     padding: 6px 0;
     font-size: 0.93rem;
     line-height: 1.55;
-    border-bottom: 1px solid #8b0000;
+    border-bottom: 1px solid var(--accent);
     list-style: none;
+}
+
+/* ============================================================
+   Experience
+   ============================================================ */
+.exp-table { width: 100%; border-collapse: collapse; }
+.exp-table td, .exp-table th { padding: 6px 0; vertical-align: top; border: none; }
+.exp-table th {
+    white-space: normal;
+    font-weight: 600;
+    color: var(--accent);
+    padding-right: 1.5rem;
+    font-size: 0.9rem;
+    width: 210px;
+    text-align: left;
+}
+.exp-table td { font-size: 0.95rem; line-height: 1.5; text-align: left; padding-bottom: 18px; }
+.exp-table .exp-role { color: var(--text); font-weight: 500; }
+.exp-table .exp-detail { color: var(--text-muted); }
+
+.exp-summary { color: var(--text-muted); font-size: 0.9rem; margin: 5px 0 0; line-height: 1.55; }
+
+.exp-outputs { margin: 8px 0 0; }
+.exp-outputs-label { color: var(--text-soft); font-weight: 500; font-size: 0.82rem; margin-right: 4px; }
+.exp-outputs a {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 1px 9px;
+    border: 1px solid var(--border-soft);
+    border-radius: 4px;
+    color: var(--text-soft);
+    margin-right: 6px;
+    transition: all 0.2s;
+}
+.exp-outputs a:hover {
+    background: var(--accent-hover);
+    color: #fff;
+    border-color: var(--accent-hover);
+    text-decoration: none;
 }
 
 /* ============================================================
@@ -212,14 +326,15 @@ img { max-width: 100%; height: auto; }
     display: flex;
     gap: 20px;
     padding: 20px;
-    border: 1px solid #eee;
+    border: 1px solid var(--border);
     border-radius: 8px;
     transition: box-shadow 0.3s ease;
     align-items: center;
+    overflow: hidden;
 }
 
 .pub-item:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px var(--card-shadow);
 }
 
 .pub-item img {
@@ -228,6 +343,11 @@ img { max-width: 100%; height: auto; }
     border-radius: 4px;
     object-fit: cover;
     flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.pub-item:hover img {
+    transform: scale(1.12);
 }
 
 .pub-info {
@@ -240,22 +360,22 @@ img { max-width: 100%; height: auto; }
     font-size: 1.1rem;
     margin: 0 0 5px;
     line-height: 1.4;
-    color: #333;
+    color: var(--text);
 }
 
 .pub-title a {
-    color: #888;
+    color: var(--text-dim);
     margin-left: 5px;
     font-size: 0.85rem;
 }
 .pub-title a:hover {
-    color: #8b0000;
+    color: var(--accent);
     text-decoration: none;
 }
 
 .pub-authors {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-soft);
     margin: 0 0 4px;
     line-height: 1.45;
 }
@@ -263,19 +383,31 @@ img { max-width: 100%; height: auto; }
 .pub-authors em {
     font-style: normal;
     text-decoration: underline;
-    text-decoration-color: #8b0000;
+    text-decoration-color: var(--accent);
     text-underline-offset: 2px;
 }
 
 .pub-venue {
-    color: #8b0000;
+    color: var(--accent);
     font-weight: 500;
     font-size: 0.9rem;
     margin: 0;
 }
 
+.pub-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin-top: 6px;
+}
+.pub-meta .pub-venue { margin: 0; }
+
 .pub-links {
-    margin: 6px 0 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
 }
 
 .pub-links a {
@@ -283,22 +415,22 @@ img { max-width: 100%; height: auto; }
     font-size: 0.78rem;
     font-weight: 500;
     padding: 2px 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-soft);
     border-radius: 4px;
-    color: #555;
-    margin-right: 6px;
+    color: var(--text-soft);
+    white-space: nowrap;
     transition: all 0.2s;
 }
 
 .pub-links a:hover {
-    background: #C44E52;
+    background: var(--accent-hover);
     color: #fff;
-    border-color: #C44E52;
+    border-color: var(--accent-hover);
     text-decoration: none;
 }
 
 .award {
-    background: #8b0000;
+    background: var(--accent-solid);
     color: #fff;
     font-size: 0.72rem;
     font-style: normal;
@@ -306,6 +438,11 @@ img { max-width: 100%; height: auto; }
     border-radius: 3px;
     margin-left: 6px;
     font-weight: 600;
+}
+
+.pub-more {
+    margin-top: 16px;
+    font-size: 0.95rem;
 }
 
 /* ============================================================
@@ -322,27 +459,27 @@ img { max-width: 100%; height: auto; }
     white-space: nowrap;
     line-height: 1.5;
 }
-.ev-tag.talk     { background: #8b0000; color: #fff; }
-.ev-tag.poster   { background: #C44E52; color: #fff; }
-.ev-tag.attended { background: #f2f2f2; color: #555; border: 1px solid #ddd; }
+.ev-tag.talk     { background: var(--accent-solid); color: #fff; }
+.ev-tag.poster   { background: var(--accent-hover); color: #fff; }
+.ev-tag.attended { background: var(--tag-soft-bg); color: var(--text-soft); border: 1px solid var(--border-soft); }
 
-.ev-loc { color: #666; }
+.ev-loc { color: var(--text-muted); }
 
 .ev-links a {
     display: inline-block;
     font-size: 0.72rem;
     font-weight: 500;
     padding: 1px 8px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-soft);
     border-radius: 4px;
-    color: #555;
+    color: var(--text-soft);
     margin-left: 6px;
     transition: all 0.2s;
 }
 .ev-links a:hover {
-    background: #C44E52;
+    background: var(--accent-hover);
     color: #fff;
-    border-color: #C44E52;
+    border-color: var(--accent-hover);
     text-decoration: none;
 }
 
@@ -352,7 +489,7 @@ img { max-width: 100%; height: auto; }
 footer {
     text-align: center;
     padding: 30px 0;
-    color: #999;
+    color: var(--text-dim);
     font-size: 0.85rem;
     margin-top: 20px;
 }
@@ -362,12 +499,12 @@ footer {
    ============================================================ */
 .page-header { margin-bottom: 0.5rem; }
 .page-header h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.2rem; }
-.page-header .page-desc { font-size: 0.9rem; color: #666; }
+.page-header .page-desc { font-size: 0.9rem; color: var(--text-muted); }
 
 .news-table { width: 100%; border-collapse: collapse; }
 .news-table td, .news-table th { padding: 5px 0; vertical-align: top; border: none; }
 .news-table th {
-    white-space: nowrap; font-weight: 600; color: #8b0000;
+    white-space: nowrap; font-weight: 600; color: var(--accent);
     padding-right: 1.5rem; font-size: 0.9rem; width: 100px;
     text-align: right;
 }
@@ -387,6 +524,7 @@ footer {
     }
     .social-icons {
         justify-content: center;
+        flex-wrap: wrap;
     }
     .pub-item {
         flex-direction: column;
@@ -397,4 +535,7 @@ footer {
     .navbar .nav-link {
         margin-right: 30px;
     }
+    .exp-table th { width: auto; display: block; padding-right: 0; }
+    .exp-table td { display: block; padding-top: 0; }
+    #theme-toggle { top: 10px; right: 10px; width: 34px; height: 34px; }
 }
