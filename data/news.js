@@ -1,4 +1,5 @@
 const NEWS_DATA = [
+    { date: "July 2026", text: 'Our paper <a href="https://cxcscmu.github.io/SkillLearnBench/">SkillLearnBench</a> has been accepted to COLM 2026 🎉 My third paper during my PhD, working with an amazing team! Looking forward to seeing everyone in San Francisco!' },
     { date: "May 2026", text: 'Our paper <a href="https://arxiv.org/pdf/2604.10938">AgentWebBench</a>  is accepted by ICML 2026 🎉. My second paper during my PhD! It presents a benchmark for multi-agent coordination in agentic web. ' },
     { date: "Apr 2026", text: 'Our paper <a href="https://cxcscmu.github.io/SkillLearnBench/">SkillLearnBench</a> presents a benchmark for continual learning methods in agent skill generation. Check it out for some interesting findings! ' },
     { date: "Apr 2026", text: 'Excited to share that <a href="https://arxiv.org/pdf/2601.11340">Neural Chain-of-Thought Search (NCoTS) </a> is accepted by ACL 2026 🎉, a framework that reformulates reasoning as a dynamic search for the optimal thinking strategy. NCoTS boosts accuracy by over 3.5% while reducing generation length by over 22%. ' },
