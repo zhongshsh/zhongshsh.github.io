@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events — Shanshan Zhong</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css">
+</head>
+<body>
+
+    <!-- Intro Section -->
+    <section class="intro-container">
+        <div class="profile-photo">
+            <img src="assets/img/avatar.jpg" alt="Shanshan Zhong">
+        </div>
+        <div class="intro-text">
+            <h1>Shanshan Zhong</h1>
+            <h1 class="cn-name">钟珊珊</h1>
+            <div class="social-icons">
+                <a href="https://scholar.google.com/citations?user=0htBiCEAAAAJ" target="_blank" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                <a href="https://twitter.com/zhongshsh33" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/shanshan-zhong-b99922365" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/zhongshsh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:szhong2@cs.cmu.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="school-info">
+            <h1>Ph.D. Student</h1>
+            <p>Carnegie Mellon University</p>
+            <p>Language Technologies Institute</p>
+        </div>
+    </section>
+
+    <!-- Navigation Banner -->
+    <header class="banner">
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="news.html" class="nav-link">News</a>
+            <a href="events.html" class="nav-link">Events</a>
+        </nav>
+    </header>
+
+    <!-- Upcoming Events -->
+    <section class="section">
+        <h2>Upcoming</h2>
+        <table class="news-table" id="events-upcoming"></table>
+    </section>
+
+    <!-- Past Events -->
+    <section class="section">
+        <h2>Past Events</h2>
+        <table class="news-table" id="events-past-recent"></table>
+        <details id="events-past-older-wrap">
+            <summary>&nbsp;&nbsp; Older</summary>
+            <table class="news-table" id="events-past-older"></table>
+        </details>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Shanshan Zhong
+    </footer>
+
+<script src="data/events.js"></script>
+<script>
+// ---- Upcoming ----
+const upcoming = document.getElementById('events-upcoming');
+if (EVENTS_DATA.length === 0) {
+    upcoming.innerHTML = `<tr><td style="color:#999;">No upcoming events right now — check back soon!</td></tr>`;
+} else {
+    EVENTS_DATA.forEach(item => {
+        upcoming.innerHTML += `<tr><th>${item.date}</th><td>${item.text}</td></tr>`;
+    });
+}
+
+// ---- Past events ----
+const TAG_META = {
+    talk:     { cls: 'talk',     label: '🎤 Talk' },
+    poster:   { cls: 'poster',   label: '📌 Poster' },
+    attended: { cls: 'attended', label: '📍 Attended' },
+};
+
+function renderPastEvent(item) {
+    const t = TAG_META[item.type] || TAG_META.attended;
+    const tag = `<span class="ev-tag ${t.cls}">${t.label}</span>`;
+    const title = item.title ? `<b>“${item.title}”</b> ` : '';
+    const venue = item.venue ? `${item.title ? '@ ' : ''}${item.venue}` : '';
+    const loc = item.location ? `<span class="ev-loc">, ${item.location}</span>` : '';
+    const links = (item.links || [])
+        .filter(l => l && l.url)
+        .map(l => `<a href="${l.url}" target="_blank">${l.label}</a>`)
+        .join('');
+    const linksHtml = links ? ` <span class="ev-links">${links}</span>` : '';
+    return `<tr><th>${item.date}</th><td>${tag}${title}${venue}${loc}${linksHtml}</td></tr>`;
+}
+
+const PAST_RECENT_COUNT = 5;
+const pastRecent = document.getElementById('events-past-recent');
+const pastOlder = document.getElementById('events-past-older');
+PAST_EVENTS_DATA.forEach((item, i) => {
+    const row = renderPastEvent(item);
+    if (i < PAST_RECENT_COUNT) {
+        pastRecent.innerHTML += row;
+    } else {
+        pastOlder.innerHTML += row;
+    }
+});
+// Hide the "Older" toggle when there is nothing folded away.
+if (PAST_EVENTS_DATA.length <= PAST_RECENT_COUNT) {
+    document.getElementById('events-past-older-wrap').style.display = 'none';
+}
+if (PAST_EVENTS_DATA.length === 0) {
+    pastRecent.innerHTML = `<tr><td style="color:#999;">Coming soon.</td></tr>`;
+}
+</script>
+
+</body>
+</html>

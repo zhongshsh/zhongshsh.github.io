@@ -309,6 +309,44 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ============================================================
+   Events
+   ============================================================ */
+.ev-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 1px 8px;
+    border-radius: 3px;
+    margin-right: 8px;
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: 1.5;
+}
+.ev-tag.talk     { background: #8b0000; color: #fff; }
+.ev-tag.poster   { background: #C44E52; color: #fff; }
+.ev-tag.attended { background: #f2f2f2; color: #555; border: 1px solid #ddd; }
+
+.ev-loc { color: #666; }
+
+.ev-links a {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 1px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #555;
+    margin-left: 6px;
+    transition: all 0.2s;
+}
+.ev-links a:hover {
+    background: #C44E52;
+    color: #fff;
+    border-color: #C44E52;
+    text-decoration: none;
+}
+
+/* ============================================================
    Footer
    ============================================================ */
 footer {
