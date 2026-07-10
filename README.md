@@ -9,7 +9,7 @@ updates are just editing a data file.
 ```
 index.html          → Home: bio + research interests, event banner, News,
                        Selected Publications, Experience, Awards, Academic Service,
-                       Get Connected, Community
+                       Get Connected, Life & Community
 news.html           → Full news archive
 events.html         → Upcoming + Past events
 data/news.js        → NEWS_DATA        (Home shows the latest 3; news.html shows all)
@@ -92,10 +92,10 @@ Edit `data/experience.js`, add to `EXPERIENCE_DATA` (newest first):
 }
 ```
 
-### Edit prose (bio, research interests, Get Connected, Community)
+### Edit prose (bio, research interests, Get Connected, Life & Community)
 These are written directly in `index.html`, not in a data file:
 - **Bio + research interests**: the first `<section>` (research interests are `<details open>` blocks — keep `open` so they show expanded).
-- **Get Connected / Community**: the last two `<section>`s.
+- **Get Connected / Life & Community**: the last two `<section>`s.
 
 ### Reorder Home sections
 Move the whole `<section>…</section>` block to a new position in `index.html`.
