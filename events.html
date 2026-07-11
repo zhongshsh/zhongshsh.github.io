@@ -78,12 +78,12 @@
         &copy; 2026 Shanshan Zhong<span class="last-updated"></span>
     </footer>
 
-<script src="data/events.js"></script>
+<script src="data/events.js?v=20260711"></script>
 <script>
 // ---- Upcoming ----
 const upcoming = document.getElementById('events-upcoming');
 if (EVENTS_DATA.length === 0) {
-    upcoming.innerHTML = `<tr><td style="color:var(--text-dim);">No upcoming events right now. Check back soon!</td></tr>`;
+    upcoming.innerHTML = `<tr><td style="color:var(--text-muted);">No upcoming events right now. Check back soon!</td></tr>`;
 } else {
     EVENTS_DATA.forEach(item => {
         upcoming.innerHTML += `<tr><th>${item.date}</th><td>${item.text}</td></tr>`;
@@ -108,7 +108,8 @@ function renderPastEvent(item) {
         .map(l => `<a href="${l.url}" target="_blank">${l.label}</a>`)
         .join('');
     const linksHtml = links ? ` <span class="ev-links">${links}</span>` : '';
-    return `<tr><th>${item.date}</th><td>${tag}${title}${venue}${loc}${linksHtml}</td></tr>`;
+    const note = item.note ? `<span class="ev-note">${item.note}</span>` : '';
+    return `<tr><th>${item.date}</th><td>${tag}${title}${venue}${loc}${linksHtml}${note}</td></tr>`;
 }
 
 const PAST_RECENT_COUNT = 5;
@@ -127,7 +128,7 @@ if (PAST_EVENTS_DATA.length <= PAST_RECENT_COUNT) {
     document.getElementById('events-past-older-wrap').style.display = 'none';
 }
 if (PAST_EVENTS_DATA.length === 0) {
-    pastRecent.innerHTML = `<tr><td style="color:var(--text-dim);">Coming soon.</td></tr>`;
+    pastRecent.innerHTML = `<tr><td style="color:var(--text-muted);">Coming soon.</td></tr>`;
 }
 </script>
 <script src="data/theme.js"></script>

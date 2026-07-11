@@ -1,0 +1,20 @@
+# Local agent and audit artifacts
+.agents/
+.codex/
+.codex-audit/
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dependencies and logs
+node_modules/
+*.log
+

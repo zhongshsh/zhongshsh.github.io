@@ -17,6 +17,7 @@ const PAST_EVENTS_DATA = [
         type: "attended",
         venue: "ACL 2026",
         location: "San Diego, USA",
+        note: "Sea breeze, blue skies, and tacos worth coming back for.",
         links: [
             { label: "NCoTS", url: "https://arxiv.org/abs/2601.11340" },
         ],
@@ -26,6 +27,7 @@ const PAST_EVENTS_DATA = [
         type: "attended",
         venue: "ACL 2024",
         location: "Bangkok, Thailand",
+        note: "My lucky city, with warm nights, bright streets, and good things always happening here.",
         links: [
             { label: "MoExtend", url: "https://arxiv.org/abs/2408.03511" },
         ],
@@ -35,6 +37,7 @@ const PAST_EVENTS_DATA = [
         type: "attended",
         venue: "ICML 2024",
         location: "Vienna, Austria",
+        note: "Grand old streets, great beer, and a train ticket to Budapest and beyond.",
         links: [
             { label: "AttNS", url: "https://openreview.net/forum?id=7RHFdkAkVY" },
         ],
@@ -44,6 +47,7 @@ const PAST_EVENTS_DATA = [
         type: "attended",
         venue: "CVPR 2024",
         location: "Seattle, USA",
+        note: "Deep-green parks, the original Starbucks, and the delightfully weird Gum Wall.",
         links: [
             { label: "CLoT", url: "https://arxiv.org/abs/2312.02439" },
         ],
@@ -53,6 +57,7 @@ const PAST_EVENTS_DATA = [
         type: "attended",
         venue: "WWW 2024",
         location: "Singapore",
+        note: "Clean, calm, and lush, with mangosteen and durian for a midnight feast.",
         links: [
             { label: "Mirror Gradient", url: "https://arxiv.org/abs/2402.11262" },
         ],
