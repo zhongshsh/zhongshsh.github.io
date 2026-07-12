@@ -184,6 +184,14 @@ img { max-width: 100%; height: auto; }
     text-decoration: none;
 }
 
+.navbar .nav-link.active {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
 /* Upcoming-event banner */
 .event-banner {
     margin: 16px 0 0;
