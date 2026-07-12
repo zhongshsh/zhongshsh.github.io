@@ -80,6 +80,8 @@ const PUBLICATIONS_DATA = [
         title: "Let's Think Outside the Box: Exploring Leap-of-Thought in Large Language Models with Creative Humor Generation",
         authors: "<em>Shanshan Zhong</em>, Zhongzhan Huang, Shanghua Gao, Wushao Wen, Liang Lin, Marinka Zitnik, Pan Zhou",
         venue: "CVPR 2024",
+        award: "Featured by MIT Technology Review China",
+        awardUrl: "https://mittrchina.com/news/detail/13506",
         links: [
             { label: "arXiv", url: "https://arxiv.org/abs/2312.02439" },
             { label: "Code", url: "https://github.com/sail-sg/CLoT" },

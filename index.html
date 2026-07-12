@@ -150,7 +150,11 @@
 <script>
 const pubContainer = document.getElementById('pub-container');
 PUBLICATIONS_DATA.forEach(item => {
-    const award = item.award ? ` <span class="award">${item.award}</span>` : '';
+    const award = item.award
+        ? item.awardUrl
+            ? ` <a class="award" href="${item.awardUrl}" target="_blank">${item.award}</a>`
+            : ` <span class="award">${item.award}</span>`
+        : '';
     const links = (item.links || []).filter(l => l && l.url);
     const linksHtml = links.length
         ? `<p class="pub-links">${links.map(l => `<a href="${l.url}" target="_blank">${l.label}</a>`).join('')}</p>`
