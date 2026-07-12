@@ -440,6 +440,30 @@ img { max-width: 100%; height: auto; }
     font-size: 0.95rem;
 }
 
+.pub-year {
+    color: var(--text);
+    font-size: 1.2rem;
+    margin: 28px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+#all-publications .pub-year:first-child {
+    margin-top: 0;
+}
+
+.pub-image-placeholder {
+    width: 80px;
+    min-width: 80px;
+    aspect-ratio: 4 / 3;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    background: var(--tag-soft-bg);
+    border: 1px solid var(--border-soft);
+    color: var(--text-muted);
+}
+
 /* ============================================================
    Events
    ============================================================ */

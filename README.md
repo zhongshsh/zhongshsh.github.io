@@ -14,12 +14,14 @@ news.html           → Full news archive
 events.html         → Upcoming + Past events
 data/news.js        → NEWS_DATA        (Home shows the latest 3; news.html shows all)
 data/publications.js→ PUBLICATIONS_DATA (Selected Publications on Home)
+data/all-publications.js → ALL_PUBLICATIONS_DATA (Additional entries on Publications page)
 data/events.js      → EVENTS_DATA (upcoming) + PAST_EVENTS_DATA (past)
 data/awards.js      → AWARDS_DATA
 data/experience.js  → EXPERIENCE_DATA
 data/theme.js       → dark-mode toggle + footer "Last updated" (loaded on every page)
 assets/css/style.css→ all styling (CSS variables → light + dark theme)
 assets/img/         → avatar + publication_preview/ thumbnails
+publications.html   → Complete publications page
 .nojekyll           → serve files as-is on GitHub Pages
 ```
 
@@ -105,6 +107,7 @@ Nav is copied in `index.html`, `news.html`, `events.html`. To change it, edit al
 ```html
 <nav class="navbar">
     <a href="index.html" class="nav-link">Home</a>
+    <a href="publications.html" class="nav-link">Publications</a>
     <a href="news.html" class="nav-link">News</a>
     <a href="events.html" class="nav-link">Events</a>
 </nav>
