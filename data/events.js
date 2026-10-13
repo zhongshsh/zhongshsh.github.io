@@ -1,6 +1,5 @@
 // ---- Upcoming events (chronological, soonest first) ----
 const EVENTS_DATA = [
-    { date: "Oct 2026", text: 'I will be at COLM 2026 in San Francisco presenting <a href="https://cxcscmu.github.io/SkillLearnBench/">SkillLearnBench</a>. Feel free to say hi!' },
 ];
 
 // ---- Past events (reverse-chronological, most recent first) ----
@@ -12,6 +11,16 @@ const EVENTS_DATA = [
 //
 // NOTE: the entries below are EXAMPLES — please verify and edit with your real events.
 const PAST_EVENTS_DATA = [
+    {
+        date: "Oct 2026",
+        type: "attended",
+        venue: "COLM 2026",
+        location: "San Francisco, USA",
+        note: "Fleet Week jets roaring past the Golden Gate, cable cars up steep hills, and a steaming bowl of cioppino.",
+        links: [
+            { label: "SkillLearnBench", url: "https://cxcscmu.github.io/SkillLearnBench/" },
+        ],
+    },
     {
         date: "Jul 2026",
         type: "attended",

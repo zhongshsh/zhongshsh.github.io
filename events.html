@@ -67,11 +67,7 @@
     <!-- Past Events -->
     <section class="section">
         <h2>Past Events</h2>
-        <table class="news-table" id="events-past-recent"></table>
-        <details id="events-past-older-wrap">
-            <summary>&nbsp;&nbsp; Older</summary>
-            <table class="news-table" id="events-past-older"></table>
-        </details>
+        <table class="news-table" id="events-past"></table>
     </section>
 
     <!-- Footer -->
@@ -79,7 +75,7 @@
         &copy; 2026 Shanshan Zhong<span class="last-updated"></span>
     </footer>
 
-<script src="data/events.js?v=20260711"></script>
+<script src="data/events.js?v=20261012"></script>
 <script>
 // ---- Upcoming ----
 const upcoming = document.getElementById('events-upcoming');
@@ -113,23 +109,12 @@ function renderPastEvent(item) {
     return `<tr><th>${item.date}</th><td>${tag}${title}${venue}${loc}${linksHtml}${note}</td></tr>`;
 }
 
-const PAST_RECENT_COUNT = 5;
-const pastRecent = document.getElementById('events-past-recent');
-const pastOlder = document.getElementById('events-past-older');
-PAST_EVENTS_DATA.forEach((item, i) => {
-    const row = renderPastEvent(item);
-    if (i < PAST_RECENT_COUNT) {
-        pastRecent.innerHTML += row;
-    } else {
-        pastOlder.innerHTML += row;
-    }
+const past = document.getElementById('events-past');
+PAST_EVENTS_DATA.forEach(item => {
+    past.innerHTML += renderPastEvent(item);
 });
-// Hide the "Older" toggle when there is nothing folded away.
-if (PAST_EVENTS_DATA.length <= PAST_RECENT_COUNT) {
-    document.getElementById('events-past-older-wrap').style.display = 'none';
-}
 if (PAST_EVENTS_DATA.length === 0) {
-    pastRecent.innerHTML = `<tr><td style="color:var(--text-muted);">Coming soon.</td></tr>`;
+    past.innerHTML = `<tr><td style="color:var(--text-muted);">Coming soon.</td></tr>`;
 }
 </script>
 <script src="data/theme.js"></script>
