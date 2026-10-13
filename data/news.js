@@ -1,4 +1,5 @@
 const NEWS_DATA = [
+    { date: "Oct 2026", text: 'New survey: <a href="https://empathyang.github.io/Proactive-AI-for-Superintelligent-Agents/classic/">Proactive AI for Superintelligent Agents</a> 🙋, with collaborators from UIUC, Google, Stanford, Berkeley, and CMU. We break proactive agents down into six key abilities and compare how much they act on their own with how much freedom they are given, across 13 domains. 🙌' },
     { date: "Aug 2026", text: 'Excited to be awarded the CMU Presidential Fellowship in LTI! 🎉' },
     { date: "July 2026", text: 'Our paper <a href="https://cxcscmu.github.io/SkillLearnBench/">SkillLearnBench</a> has been accepted to COLM 2026 🎉 My third paper during my PhD, working with an amazing team! Looking forward to seeing everyone in San Francisco!' },
     { date: "May 2026", text: 'Our paper <a href="https://arxiv.org/pdf/2604.10938">AgentWebBench</a>  is accepted by ICML 2026 🎉. My second paper during my PhD! It presents a benchmark for multi-agent coordination in agentic web. ' },
