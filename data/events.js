@@ -1,5 +1,6 @@
 // ---- Upcoming events (chronological, soonest first) ----
 const EVENTS_DATA = [
+    { date: "Oct 2026", text: 'I will be at the <b>Advancing the Science of AI Agent Evaluation Workshop</b> in New York (Oct 22–23), hosted by <a href="https://www.cmu.edu/aimsec/news-and-events/advancing-the-science-of-ai-agent-evaluation.html">CMU AIMSEC</a> and <a href="https://www.microsoft.com/en-us/research/event/advancing-the-science-of-ai-agent-evaluation/">Microsoft Research</a>. Feel free to say hi!' },
 ];
 
 // ---- Past events (reverse-chronological, most recent first) ----
