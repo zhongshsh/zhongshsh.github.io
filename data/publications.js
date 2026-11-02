@@ -3,6 +3,17 @@
 // They render as small badges under each paper — add whichever you have.
 const PUBLICATIONS_DATA = [
     {
+        img: "assets/img/publication_preview/zhong2026ideataste.png",
+        title: "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
+        authors: "<em>Shanshan Zhong</em>, Chen Xu, Jingjie Ning, Zhengzhong Liu, Aviral Kumar, Chenyan Xiong",
+        venue: "Preprint",
+        links: [
+            { label: "Homepage", url: "https://cxcscmu.github.io/IdeaTaste/" },
+            { label: "Paper", url: "https://cxcscmu.github.io/IdeaTaste/assets/paper.pdf" },
+            { label: "Code", url: "https://github.com/cxcscmu/IdeaTaste" },
+        ],
+    },
+    {
         img: "assets/img/publication_preview/zhong2026skilllearnbench.png",
         title: "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
         authors: "<em>Shanshan Zhong</em>, Yi Lu, Jingjie Ning, Yibing Wan, Lihan Feng, Yuyi Ao, Leonardo F. R. Ribeiro, Markus Dreyer, Sean Ammirati, Chenyan Xiong",
