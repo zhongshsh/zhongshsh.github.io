@@ -35,18 +35,6 @@ const ALL_PUBLICATIONS_DATA = [
     },
     {
         year: 2026,
-        img: "assets/img/publication_preview/zhong2026autogeo.png",
-        title: "What Generative Search Engines Like and How to Optimize Web Content Cooperatively",
-        authors: "Yujiang Wu*, <em>Shanshan Zhong</em>*, Yubin Kim, Chenyan Xiong",
-        venue: "ICLR 2026",
-        links: [
-            { label: "Homepage", url: "https://zhongshsh.github.io/AutoGEO/" },
-            { label: "arXiv", url: "https://arxiv.org/abs/2510.11438" },
-            { label: "Code", url: "https://github.com/cxcscmu/AutoGEO" },
-        ],
-    },
-    {
-        year: 2026,
         img: "assets/img/publication_preview/ling2026agent.png",
         title: "Agent Skills: A Data-Driven Analysis of Claude Skills for Extending Large Language Model Functionality",
         authors: "George Ling, <em>Shanshan Zhong</em>, Richard Huang",

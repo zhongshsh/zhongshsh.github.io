@@ -30,7 +30,7 @@ const PUBLICATIONS_DATA = [
     {
         img: "assets/img/publication_preview/zhong2026agentwebbench.png",
         title: "AgentWebBench: Benchmarking Multi-Agent Coordination in Agentic Web",
-        group: "check",
+        group: "measure",
         authors: "<em>Shanshan Zhong</em>, Kate Shen, Chenyan Xiong",
         venue: "ICML 2026",
         links: [
@@ -61,6 +61,18 @@ const PUBLICATIONS_DATA = [
         links: [
             { label: "arXiv", url: "https://arxiv.org/abs/2505.19959" },
             { label: "Code", url: "https://github.com/MilkThink-Lab/MiniLongBench" },
+        ],
+    },
+    {
+        img: "assets/img/publication_preview/zhong2026autogeo.png",
+        title: "What Generative Search Engines Like and How to Optimize Web Content Cooperatively",
+        group: "learn",
+        authors: "Yujiang Wu*, <em>Shanshan Zhong</em>*, Yubin Kim, Chenyan Xiong",
+        venue: "ICLR 2026",
+        links: [
+            { label: "Homepage", url: "https://zhongshsh.github.io/AutoGEO/" },
+            { label: "arXiv", url: "https://arxiv.org/abs/2510.11438" },
+            { label: "Code", url: "https://github.com/cxcscmu/AutoGEO" },
         ],
     },
     {
