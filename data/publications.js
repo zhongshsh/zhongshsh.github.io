@@ -11,7 +11,7 @@ const PUBLICATIONS_DATA = [
         venue: "Preprint",
         links: [
             { label: "Homepage", url: "https://cxcscmu.github.io/IdeaTaste/" },
-            { label: "Paper", url: "https://cxcscmu.github.io/IdeaTaste/assets/paper.pdf" },
+            { label: "Paper", url: "https://arxiv.org/pdf/2611.03424" },
             { label: "Code", url: "https://github.com/cxcscmu/IdeaTaste" },
         ],
     },
