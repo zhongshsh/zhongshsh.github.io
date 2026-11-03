@@ -2,6 +2,72 @@ const ALL_PUBLICATIONS_DATA = [
     ...PUBLICATIONS_DATA.map(item => ({ ...item, year: Number(item.venue.match(/20\d{2}/)?.[0]) || 2026 })),
     {
         year: 2026,
+        img: "assets/img/publication_preview/ling2026survey.png",
+        title: "Are We Testing Too Much? A Survey of Benchmark Compression for Efficient Evaluation of Large Language Models",
+        authors: "Guoming Ling, Yupei Lin, Zhongzhan Huang, Junxin Li, Junjie Liu, <em>Shanshan Zhong</em>, Hefeng Wu, Liang Lin",
+        venue: "Preprint",
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2610.18248" },
+        ],
+    },
+    {
+        year: 2025,
+        img: "assets/img/publication_preview/huang2025routereval.png",
+        title: "RouterEval: A Comprehensive Benchmark for Routing LLMs to Explore Model-Level Scaling Up in LLMs",
+        authors: "Zhongzhan Huang, Guoming Ling, Yupei Lin, Yandong Chen, <em>Shanshan Zhong</em>, Hefeng Wu, Liang Lin",
+        venue: "EMNLP 2025 Findings",
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2503.10657" },
+            { label: "Code", url: "https://github.com/MilkThink-Lab/RouterEval" },
+        ],
+    },
+    {
+        year: 2026,
+        img: "assets/img/publication_preview/yang2026proactive.webp",
+        title: "Proactive AI for Superintelligent Agents",
+        authors: "Ke Yang, Jiateng Liu, Jize Jiang, Chun Zhao, Yufan Cao, <em>Shanshan Zhong</em>, Yiyang Du, Ruixuan Liu, Xuying Ning, Dean Alvarez, Yuji Zhang, Duo Zhou, Miri Liu, Yuhao Cheng, Hanyang Chen, Rui Yang, Zifeng Wang, Hanghang Tong, Jingrui He, Chenyan Xiong, Chen-Yu Lee, Jiawei Han, ChengXiang Zhai",
+        venue: "Survey, 2026",
+        links: [
+            { label: "Homepage", url: "https://empathyang.github.io/Proactive-AI-for-Superintelligent-Agents/" },
+            { label: "Paper", url: "https://empathyang.github.io/Proactive-AI-for-Superintelligent-Agents/Proactive-AI-for-Superintelligent-Agents.pdf" },
+            { label: "Code", url: "https://github.com/EmpathYang/Proactive-AI-for-Superintelligent-Agents" },
+        ],
+    },
+    {
+        year: 2026,
+        img: "assets/img/publication_preview/zhong2026autogeo.png",
+        title: "What Generative Search Engines Like and How to Optimize Web Content Cooperatively",
+        authors: "Yujiang Wu*, <em>Shanshan Zhong</em>*, Yubin Kim, Chenyan Xiong",
+        venue: "ICLR 2026",
+        links: [
+            { label: "Homepage", url: "https://zhongshsh.github.io/AutoGEO/" },
+            { label: "arXiv", url: "https://arxiv.org/abs/2510.11438" },
+            { label: "Code", url: "https://github.com/cxcscmu/AutoGEO" },
+        ],
+    },
+    {
+        year: 2026,
+        img: "assets/img/publication_preview/ling2026agent.png",
+        title: "Agent Skills: A Data-Driven Analysis of Claude Skills for Extending Large Language Model Functionality",
+        authors: "George Ling, <em>Shanshan Zhong</em>, Richard Huang",
+        venue: "Preprint",
+        links: [
+            { label: "arXiv", url: "https://arxiv.org/abs/2602.08004" },
+        ],
+    },
+    {
+        year: 2025,
+        img: "assets/img/publication_preview/huang2025flat.png",
+        title: "Flat Local Minima for Continual Learning on Semantic Segmentation",
+        authors: "Zhongzhan Huang, Mingfu Liang, Senwei Liang, <em>Shanshan Zhong</em>",
+        venue: "MMM 2025",
+        award: "Best Paper Candidate",
+        links: [
+            { label: "Paper", url: "https://link.springer.com/chapter/10.1007/978-981-96-2054-8_29" },
+        ],
+    },
+    {
+        year: 2026,
         img: "assets/img/publication_preview/ling2026neural.png",
         title: "Neural Chain-of-Thought Search: Searching the Optimal Reasoning Path to Enhance Large Language Models",
         authors: "Guoming Ling, Zhongzhan Huang, Yupei Lin, Junxin Li, <em>Shanshan Zhong</em>, Hefeng Wu, Liang Lin",
